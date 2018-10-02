@@ -1,25 +1,13 @@
-# README
+# Simple Content Management System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Rails version: 5.0.0
 
-Things you may want to cover:
+* Database version: MySQL2 ```>= 0.3.18', '< 0.5```
 
-* Ruby version
+* Configuration: provide db access to rails_user and place credentials in ```config/database.yml```
 
-* System dependencies
+* Dependencies: run ```bundle install``` to install Ruby Gems
 
-* Configuration
+* Database schema: see ```db/schema.rb```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # simple_cms
