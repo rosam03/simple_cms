@@ -10,4 +10,3 @@
 
 * Database schema: see ```db/schema.rb```
 
-# simple_cms
