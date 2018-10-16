@@ -1,0 +1,16 @@
+<% @page_title = @page.name %>
+
+<h2 style="margin-left: 20%;"><%= @page.name %></h2>
+
+<% @page.sections.visible.sorted.each do |section| %>
+  <div class="section" style="margin-left: 20%;">
+    <% case section.content_type %>
+    <% when 'HTML' %>
+      <strong> <%= simple_format(section.name) %> </strong>
+      <%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
+    <% when 'text' %>
+      <strong> <%= simple_format(section.name) %> </strong>
+      <%= simple_format(section.content) %>
+    <% end %>
+  </div>
+<% end %>
